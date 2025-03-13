@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="overflow-hidden">
+    <!-- wrapper -->
+     <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#0d1117] gap-10 scale-150">
+        <div class="text-[#359af0] font-medium text-[30px]">Increment and Decrement</div>
+
+        <div class="bg-white flex flex-row text-[25 px] text-[#344151] rounded-sm">
+            <!-- negative button -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] p-3 px-5">
+                <i class="fa-solid fa-minus"></i>               
+            </button>
+
+            <div id="counter" class="font-bold p-3 px-10 "> 
+                0
+            </div>
+
+            <!-- positive button -->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] p-3 px-5">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <button onclick="reset()" class="font-bold text-[15px] bg-white px-5 py-2 text-[#344151] rounded-sm">Reset</button>
+     </div>
+
+     <script src="index.js"></script>
+</body>
+</html>
