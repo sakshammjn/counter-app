@@ -1,2 +1,2 @@
 # CounterApp
-every step counts
+make every step count
